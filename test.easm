@@ -1,0 +1,17 @@
+# Test program
+# Calculates Fibonacci sequence
+
+# set up 
+LDI 1,%A
+LDI 1,%B
+
+# skriv sum til OUTPUT register
+ADR %OUT
+
+# skriv sum til adresse 255 i ram
+ADM 255
+
+# skriv sum til A for næste step
+ADR %A
+
+ALM
